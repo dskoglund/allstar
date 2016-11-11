@@ -1,0 +1,42 @@
+{
+  "name": "allstar",
+  "version": "1.0.0",
+  "description": "a plumbing website",
+  "main": "index.js",
+  "scripts": {
+  "watch": "nodemon .",
+  "start": "node .",
+  "test": "mocha",
+  "tdd": "mocha -w -R nyan",
+  "seed": "node seed",
+  "heroku-postbuild": "npm run seed"
+  },
+  "engines": {
+  "node": ">=6.0.0"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dskoglund/allstar.git"
+  },
+  "author": "david skoglund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dskoglund/allstar/issues"
+  },
+  "homepage": "https://github.com/dskoglund/allstar#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "request": "^2.75.0"
+  },
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.4",
+    "morgan": "^1.7.0"
+  }
+}
