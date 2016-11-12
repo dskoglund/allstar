@@ -11,10 +11,38 @@
     <script src="https://use.fontawesome.com/7904e30ddc.js"></script>
   </head>
   <body>
-
-
+    <div ng-app = "allstar">
+      <div ng-controller = "NavigationController as nav">
+        <div id = "jumbo-div" class = "col-xs-12">
+          <div id = "jumbotron" class="jumbotron">
+            <div id = "jumbo-text" class = "col-xs-12">
+              <h1 id = "logo">{{ nav.logo }}</h1>
+              <h2 id = "company">{{ nav.company }}</h2>
+              <h2 id = "statement">{{ nav.statement }}</h2>
+              <h4 id = "phone-number">{{ nav.phone }}</h4>
+              <h4 id = "serving">{{ nav.serving }}</h4>
+            </div>
+            <div id = "nav-bar" class="col-xs-12">
+              <div ng-click = "goToHomeView()" id = "home-btn" class="col-md-2 col-md-offset-2">
+                <h5 type="button" name="button">Home</h5>
+              </div>
+              <div ng-click = "goToServicesView()" id = "services-btn" class="col-md-2">
+                <h5 type="button" name="button">Services</h5>
+              </div>
+              <div ng-click = "goToTestimonialView()" id = "testimonial-btn" class="col-md-2">
+                <h5 type="button" name="button">Testimonials</h5>
+              </div>
+              <div ng-click = "goToContactView()" id = "contact-btn" class="col-md-2">
+                <h5 type="button" name="button">Contact</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "angular-view"  class="col-xs-12" ng-view>
+        </div>
+      </div>
+    </div>
     <script src="default.js">
-
     </script>
   </body>
 </html>

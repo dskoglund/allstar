@@ -1,0 +1,56 @@
+#jumbo-div {
+  padding: 0px;
+  height: 100vh;
+}
+
+#jumbotron {
+  height: 100%;
+}
+
+#jumbo-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#logo {
+  text-align: center;
+}
+
+#company {
+  text-align: center;
+}
+
+#statement {
+  text-align: center;
+}
+
+#phone-number {
+  text-align: center;
+}
+
+#serving {
+  text-align: center;
+}
+
+#nav-bar {
+  position: absolute;
+  bottom: 5%;
+}
+
+#home-btn {
+  text-align: center;
+}
+
+#services-btn {
+  text-align: center;
+}
+
+#testimonial-btn {
+  text-align: center;
+}
+
+#contact-btn {
+  text-align: center;
+}

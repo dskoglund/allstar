@@ -4,12 +4,12 @@
   "description": "a plumbing website",
   "main": "index.js",
   "scripts": {
-  "watch": "nodemon .",
-  "start": "node .",
-  "test": "mocha",
-  "tdd": "mocha -w -R nyan",
-  "seed": "node seed",
-  "heroku-postbuild": "npm run seed"
+    "watch": "nodemon .",
+    "start": "node .",
+    "test": "mocha",
+    "tdd": "mocha -w -R nyan",
+    "seed": "node seed",
+    "heroku-postbuild": "npm run seed"
   },
   "engines": {
   "node": ">=6.0.0"
