@@ -5,22 +5,22 @@ const app = angular.module('allstar', [
 app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/', {
+      .when('/Home', {
         templateUrl: '/templates/home.html',
         controller: 'HomeController',
         controllerAs: 'home'
       })
-      .when('/servicesweprovide', {
+      .when('/ServicesWeProvide', {
         templateUrl: '/templates/services.html',
         controller: 'ServicesController',
         controllerAs: 'services'
       })
-      .when('/customertestimonials', {
+      .when('/CustomerTestimonials', {
         templateUrl: '/templates/testimonials.html',
         controller: 'TestimonialsController',
         controllerAs: 'testimonials'
       })
-      .when('/contact', {
+      .when('/ContactUs', {
         templateUrl: '/templates/contact.html',
         controller: 'ContactController',
         controllerAs: 'contact'
@@ -43,4 +43,28 @@ function NavigationController($scope, $location, $anchorScroll, $window) {
   vm.statement = 'Quality & Reliability Makes Our Team The Best In Our Field'
   vm.phone = '949-470-0072'
   vm.serving = 'Serving all of Orange County, CA'
+
+  const scroll = () => {
+    $location.hash('__')
+    $anchorScroll()
+    $window.scrollBy(0, screenHeight)
+  }
+
+  $scope.goToHomeView = function() {
+    $location.path('/Home')
+    scroll()
+  }
+  $scope.goToServicesView = function() {
+    $location.path('/ServicesWeProvide')
+    scroll()
+  }
+  $scope.goToTestimonialView = function() {
+    $location.path('/CustomerTestimonials')
+    scroll()
+
+  }
+  $scope.goToContactView = function() {
+    $location.path('/ContactUs')
+    scroll()
+  }
 }

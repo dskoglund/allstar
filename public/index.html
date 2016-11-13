@@ -11,10 +11,17 @@
     <script src="https://use.fontawesome.com/7904e30ddc.js"></script>
   </head>
   <body>
+    <div id = "__" class="">
+    </div>
     <div ng-app = "allstar">
       <div ng-controller = "NavigationController as nav">
         <div id = "jumbo-div" class = "col-xs-12">
           <div id = "jumbotron" class="jumbotron">
+            <div id="video-div" class="">
+              <video id="video" preload muted autoplay loop>
+                <source src="https://s3.amazonaws.com/allstarplumbing/Underwater+-+5385.mp4" type="video/mp4">
+              </video>
+            </div>
             <div id = "jumbo-text" class = "col-xs-12">
               <h1 id = "logo">{{ nav.logo }}</h1>
               <h2 id = "company">{{ nav.company }}</h2>
@@ -22,24 +29,24 @@
               <h4 id = "phone-number">{{ nav.phone }}</h4>
               <h4 id = "serving">{{ nav.serving }}</h4>
             </div>
-            <div id = "nav-bar" class="col-xs-12">
-              <div ng-click = "goToHomeView()" id = "home-btn" class="col-md-2 col-md-offset-2">
-                <h5 type="button" name="button">Home</h5>
-              </div>
-              <div ng-click = "goToServicesView()" id = "services-btn" class="col-md-2">
-                <h5 type="button" name="button">Services</h5>
-              </div>
-              <div ng-click = "goToTestimonialView()" id = "testimonial-btn" class="col-md-2">
-                <h5 type="button" name="button">Testimonials</h5>
-              </div>
-              <div ng-click = "goToContactView()" id = "contact-btn" class="col-md-2">
-                <h5 type="button" name="button">Contact</h5>
-              </div>
+          </div>
+          <div id = "nav-bar" class="col-xs-12">
+            <div ng-click = "goToHomeView()" class="col-xs-3 col-md-2 col-md-offset-2">
+              <h2 id = "home-btn" type="button" name="button">Home</h2>
+            </div>
+            <div ng-click = "goToServicesView()" class="col-xs-3 col-md-2">
+              <h2 id = "services-btn" type="button" name="button">Services</h2>
+            </div>
+            <div ng-click = "goToTestimonialView()" class="col-xs-3 col-md-2">
+              <h2 id = "testimonial-btn" type="button" name="button">Testimonials</h2>
+            </div>
+            <div ng-click = "goToContactView()" class="col-xs-3 col-md-2">
+              <h2 id = "contact-btn" type="button" name="button">Contact</h2>
             </div>
           </div>
         </div>
-        <div id = "angular-view"  class="col-xs-12" ng-view>
-        </div>
+      </div>
+      <div id = "angular-view"  class="col-xs-12" ng-view>
       </div>
     </div>
     <script src="default.js">
