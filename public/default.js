@@ -1,5 +1,5 @@
 const app = angular.module('allstar', [
-  'ngRoute'
+  'ngRoute', 'ngAnimate'
 ])
 
 app.config(['$routeProvider', '$locationProvider',

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
     <script src="https://use.fontawesome.com/7904e30ddc.js"></script>
   </head>
   <body>
@@ -46,7 +47,9 @@
           </div>
         </div>
       </div>
-      <div id = "angular-view"  class="col-xs-12" ng-view>
+      <div class="view-animate-container">
+        <div class="view-animate" ng-view>
+        </div>
       </div>
     </div>
     <script src="default.js">
