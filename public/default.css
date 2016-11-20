@@ -60,6 +60,7 @@
 
 #phone-number {
   text-align: center;
+  color: blue;
 }
 
 #serving {
@@ -72,9 +73,23 @@
   z-index: 100;
   position: fixed;
   color: white;
+  background-color: none;
+  top:0%;
+}
+
+.dropdown-menu {
+  background: none;
+}
+.dropdown-item {
+  color: white;
+  text-align: center;
+  background-color: lightblue;
+  opacity: 0.5;
+  margin: 0px;
+  padding: 10px;
+}
+.dropdown-item:hover {
   background-color: blue;
-  opacity: 0.1;
-  top:0%
 }
 
 #home-btn {
@@ -87,7 +102,7 @@
   border-style: solid;
   border-width: thin;
   border-color: white;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 #services-btn {
@@ -100,6 +115,7 @@
   border-style: solid;
   border-width: thin;
   border-color: white;
+  opacity: 0.5;
 }
 
 #testimonial-btn {
@@ -112,6 +128,7 @@
   border-style: solid;
   border-width: thin;
   border-color: white;
+  opacity: 0.5;
 }
 
 #contact-btn {
@@ -124,6 +141,7 @@
   border-style: solid;
   border-width: thin;
   border-color: white;
+  opacity: 0.5;
 }
 
 /*templates*/
@@ -139,15 +157,14 @@
   background-image: url('https://s3.amazonaws.com/allstarplumbing/plumbing.jpg');
 }
 .view-animate {
+  margin-top: 5%;
   padding: 10px;
 }
 .view-animate.ng-enter, .view-animate.ng-leave {
   transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
-
   display:block;
   width:100%;
-  border-left:1px solid black;
-
+  color: white;
   position:absolute;
   top:0;
   left:0;
@@ -172,11 +189,6 @@
 }
 
 #contact-template {
-  height: 100%;
-  width: 100%;
-}
-
-#services-template {
   height: 100%;
   width: 100%;
 }
